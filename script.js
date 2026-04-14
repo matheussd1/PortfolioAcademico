@@ -39,6 +39,14 @@ const formacaoAcademica = [
     },
 ];
 
+const cursosComplementares = [
+    {
+        nome: "IT Essentials - CISCO",
+        descricao: "Base de TI e habilidades práticas em hardware, software, rede e segurança.",
+        periodo: "Mar 2025 - Jul 2025",
+        cargaHoraria: "70h"
+    }
+];
 
 //funcoes 
 
@@ -63,14 +71,14 @@ function gerarSaudacao() {
     let mensagem;
 
     if (hora >= 5 && hora < 12) {
-        mensagem = "Bom dia";
+        mensagem = "Bom dia!";
     } else if (hora >= 12 && hora < 18) {
-        mensagem = "Boa tarde";
+        mensagem = "Boa tarde!";
     } else {
-        mensagem = "Boa noite";
+        mensagem = "Boa noite!";
     }
 
-    saudacaoElement.innerText = `${mensagem}, me chamo`;
+    saudacaoElement.innerText = `${mensagem} Meu nome é`;
 }
 
 // renderizar os projetos (ja atende requisitos 2 e 3 )
@@ -120,15 +128,33 @@ function copiarEmail() {
 
     // Copia para a área de transferência
     navigator.clipboard.writeText(email).then(() => {
-        // Estrutura de decisão para o feedback [cite: 30]
+
         if (feedback) {
             feedback.classList.add('visivel');
             
-            // Remove a mensagem após 2 segundos
             setTimeout(() => {
                 feedback.classList.remove('visivel');
             }, 2000);
         }
+    });
+}
+
+function carregarCursos() {
+    const container = document.getElementById('lista-cursos');
+    container.innerHTML = "";
+
+    // Repetição para renderizar os cursos
+    cursosComplementares.forEach(curso => {
+        container.innerHTML += `
+            <div class="curso-item">
+                <div class="curso-header">
+                    <h3>${curso.nome}</h3>
+                    <span class="badge-carga">${curso.cargaHoraria}</span>
+                </div>
+                <p class="curso-desc">${curso.descricao}</p>
+                <p class="curso-periodo">${curso.periodo}</p>
+            </div>
+        `;
     });
 }
 
@@ -139,4 +165,5 @@ window.onload = () => {
     renderizarHabilidades();
     carregarFormacao();
     copiarEmail();
+    carregarCursos();
 };
