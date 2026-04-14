@@ -206,3 +206,40 @@ section {
 .btn-git:hover::after {
     transform: translateX(4px);
 }
+
+
+
+/* Formação */
+
+#lista-formacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.formacao-item {
+    border-left: 2px solid #1a1a1a; 
+    padding-left: 1.5rem;
+    transition: border-color 0.3s;
+}
+
+.formacao-item:hover {
+    border-color: #ffffff; 
+}
+
+.curso-nome {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.instituicao-nome {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.periodo {
+    font-size: 0.85rem;
+    color: #666;
+}

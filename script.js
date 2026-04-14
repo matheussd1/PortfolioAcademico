@@ -30,22 +30,28 @@ const habilidades = [
 const formacaoAcademica = [
     {
         curso: "Análise e Desenvolvimento de Sistemas",
-        instituicao: "Fatec prof Jessen Vidal - SJC",
+        instituicao: "FATEC SJC - Prof. Jessen Vidal",
         periodo: "2025 - 2027"
-    }
+    },
+    {
+        curso: "Ensino Médio",
+        instituicao: "Colégio Inspire",
+        periodo: "2022 - 2024"
+    },
 ];
-
 
 
 //funcoes 
 
 function carregarFormacao() {
     const container = document.getElementById('lista-formacao');
+    container.innerHTML = ""; // Limpa antes de preencher
+
     formacaoAcademica.forEach(f => {
         container.innerHTML += `
             <div class="formacao-item">
-                <h3>${f.curso}</h3>
-                <p>${f.instituicao} | <span>${f.periodo}</span></p>
+                <h3 class="curso-nome">${f.curso}</h3>
+                <p class="instituicao-nome">${f.instituicao} | <span class="periodo">${f.periodo}</span></p>
             </div>
         `;
     });
