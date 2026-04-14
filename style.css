@@ -243,3 +243,38 @@ section {
     font-size: 0.85rem;
     color: #666;
 }
+
+
+/* muda a cor da barra que separa as informações*/
+.section {
+    padding: 100px 0 60px 0;
+    border-bottom: 1px solid #333; 
+}
+
+
+
+/* habilidades */
+
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; 
+    margin-top: 1.5rem;
+}
+
+
+.skill-badge {
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', monospace; 
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    border-color: #fff;
+    background: #1a1a1a;
+}

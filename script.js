@@ -22,9 +22,8 @@ const projetos = [
     }
 ];
 
-const habilidades = [
-    "HTML5", "CSS3", "JavaScript", "TypeScript", "Node.js", "Express", "SQL", "Git", "GitHub"
-];
+const hardSkills = ["Python", "TypeScript", "HTML5", "CSS3", "Java", "JavaScript", "Node.js", "Express", "SQL", "Git", "GitHub"];
+const softSkills = ["Comunicação", "Organização", "Trabalho em Equipe", "Resolução de Problemas"];
 
 
 const formacaoAcademica = [
@@ -97,9 +96,20 @@ function renderizarProjetos() {
 
 // renderiza as habilidades
 function renderizarHabilidades() {
-    const container = document.getElementById('lista-habilidades');
-    habilidades.forEach(skill => {
-        container.innerHTML += `<span class="skill-badge">${skill}</span>`;
+    const containerHard = document.getElementById('lista-habilidades');
+    const containerSoft = document.getElementById('lista-soft-skills');
+    
+    containerHard.innerHTML = "";
+    containerSoft.innerHTML = "";
+
+
+    hardSkills.forEach(skill => {
+        containerHard.innerHTML += `<span class="skill-badge hard">${skill}</span>`;
+    });
+
+    
+    softSkills.forEach(skill => {
+        containerSoft.innerHTML += `<span class="skill-badge soft">${skill}</span>`;
     });
 }
 
