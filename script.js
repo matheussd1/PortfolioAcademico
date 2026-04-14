@@ -9,16 +9,28 @@ const dadosPessoais = {
 
 const projetos = [
     {
+        nome: "API com DM Card",
+        descricao: "API robusta para consulta de indicadores financeiros e KPIs estaduais com banco de dados SQLite.",
+        tecnologias: ["Node.js", "Express", "SQLite"],
+        link: "https://github.com/TeamMinerva/DM-API"
+    },
+    {
+        nome: "Apollo11",
+        descricao: "Sistema focado em monitoramento e gestão de atestados médicos e equipes ageis, utilizando Python e Flask para garantir robustez e escalabilidade no backend.",
+        tecnologias: ["Python", "Flask"],
+        link: "https://github.com/matheussd1/Apollo11"
+    },
+    {
         nome: "Aerocode",
         descricao: "Sistema CLI desenvolvido em TypeScript para gestão de produção e manutenção de aeronaves.",
         tecnologias: ["Node.js", "TypeScript"],
         link: "https://github.com/matheussd1/Aerocode"
     },
     {
-        nome: "API com DM Card",
-        descricao: "API robusta para consulta de indicadores financeiros e KPIs estaduais com banco de dados SQLite.",
-        tecnologias: ["Node.js", "Express", "SQLite"],
-        link: "https://github.com/TeamMinerva/DM-API"
+        nome: "Bivago",
+        descricao: "Plataforma de busca e reserva, explorando integração de dados e uma interface de usuário intuitiva e responsiva.",
+        tecnologias: ["JavaScript", "HTML/CSS"],
+        link: "https://github.com/matheussd1/Bivago"
     }
 ];
 

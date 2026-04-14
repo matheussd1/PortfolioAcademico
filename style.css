@@ -518,3 +518,21 @@ section {
     width: 100%; 
 }
 
+#lista-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; 
+    margin-top: 2rem;
+}
+
+.projeto-card {
+    border: 1px solid #1a1a1a;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    background: rgba(10, 10, 10, 0.5); 
+}
+
+.projeto-card:hover {
+    border-color: #ffffff;
+    background: rgba(20, 20, 20, 0.8);
+}
