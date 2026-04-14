@@ -1,0 +1,99 @@
+
+:root {
+    --bg-color: #050505;       
+    --card-bg: #0f0f0f;         
+    --text-primary: #ffffff;    
+    --text-secondary: #a0a0a0;  
+    --accent: #ffffff;          
+    --border: #1a1a1a;          
+    --nav-bg: rgba(5, 5, 5, 0.9); 
+}
+
+/* --- Reset e Configurações Gerais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Rolagem suave entre seções */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-secondary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Navegação (Requisito: Menu Fixo) --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px); /* Efeito artístico de desfoque */
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.nav-content a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-content a:hover {
+    color: var(--text-primary);
+}
+
+/* --- Seções Principais --- */
+.section {
+    padding: 100px 0 60px 0; /* Espaço para não ficar sob o menu fixo */
+    border-bottom: 1px solid var(--border);
+}
+
+h2.section-title {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* apresentacao  */
+.hero-content {
+    text-align: left;
+    padding-top: 40px;
+}
+
+#saudacao {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.nome-titulo {
+    color: var(--text-primary);
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+}
+
+.mini-bio {
+    max-width: 600px;
+}
