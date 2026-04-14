@@ -308,3 +308,32 @@ section {
     color: #ffffff; 
     border-bottom: 1px solid #ffffff; 
 }
+
+
+.contato-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.feedback-msg {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+}
+
+.feedback-msg.visivel {
+    opacity: 1;
+}
+
+#btn-email:hover {
+    color: #ffffff;
+}

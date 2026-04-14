@@ -113,10 +113,30 @@ function renderizarHabilidades() {
     });
 }
 
+
+function copiarEmail() {
+    const email = "matheusrdias.dev@gmail.com";
+    const feedback = document.getElementById('feedback-copia');
+
+    // Copia para a área de transferência
+    navigator.clipboard.writeText(email).then(() => {
+        // Estrutura de decisão para o feedback [cite: 30]
+        if (feedback) {
+            feedback.classList.add('visivel');
+            
+            // Remove a mensagem após 2 segundos
+            setTimeout(() => {
+                feedback.classList.remove('visivel');
+            }, 2000);
+        }
+    });
+}
+
 //inicializa tudo 
 window.onload = () => {
     gerarSaudacao();
     renderizarProjetos();
     renderizarHabilidades();
     carregarFormacao();
+    copiarEmail();
 };
