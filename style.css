@@ -278,3 +278,33 @@ section {
     border-color: #fff;
     background: #1a1a1a;
 }
+
+
+/* Contato */
+
+.contato-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin-top: 2rem;
+}
+
+
+.contato-item {
+    color: #a0a0a0; 
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+}
+
+
+.contato-item:hover {
+    color: #ffffff; 
+    border-bottom: 1px solid #ffffff; 
+}
