@@ -337,3 +337,66 @@ section {
 #btn-email:hover {
     color: #ffffff;
 }
+
+
+/* apresentação */
+
+.hero-container {
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    padding-top: 50px;
+}
+
+
+.hero-photo {
+    flex-shrink: 0; 
+}
+
+.profile-img {
+    width: 280px; 
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #222; /* Linha sutil de 1px na cor cinza escura */
+    padding: 3px; /* Espaço pequeno entre a borda e a imagem para um efeito "passe-partout" */
+    background: #000; /* Fundo do espaço do padding */
+    transition: all 0.3s ease; /* Para um efeito sutil no hover */
+    border-radius: 12px; /* Arredondamento sutil nos cantos */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-img:hover {
+    border-color: #ffffff; 
+    transform: scale(1.02); 
+}
+
+
+.hero-text {
+    flex-grow: 1; 
+    text-align: left;
+}
+
+#saudacao {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: -10px; 
+}
+
+.nome-titulo {
+    font-size: 3.5rem;
+    color: #ffffff;
+    letter-spacing: -2px;
+}
+
+.subtitulo {
+    font-size: 1.3rem;
+    color: #a0a0a0;
+    margin-top: -15px; 
+    margin-bottom: 20px;
+}
+
+.bio {
+    max-width: 500px; 
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
