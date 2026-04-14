@@ -97,3 +97,112 @@ h2.section-title {
 .mini-bio {
     max-width: 600px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* cards dos projetos */
+ 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1.5rem; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 480px) {
+    .grid-container {
+        gap: 1rem; 
+    }
+}
+
+.projeto-card {
+    display: block;
+    text-decoration: none; 
+    background: #0a0a0a; 
+    border: 1px solid #1a1a1a; 
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projeto-card:hover {
+    border-color: #ffffff;
+    background: #0f0f0f;
+    transform: translateY(-2px); 
+}
+
+
+.projeto-card h3 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.projeto-card p {
+    color: #888;
+}
+
+.link-indicador {
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    display: block;
+}
+
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tags span {
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #666;
+    border: 1px solid #222;
+    padding: 3px 8px;
+    text-transform: uppercase;
+}
+
+.btn-git {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-git::after {
+    content: ' →'; 
+    transition: transform 0.2s;
+}
+
+.btn-git:hover::after {
+    transform: translateX(4px);
+}

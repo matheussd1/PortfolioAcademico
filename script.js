@@ -15,10 +15,10 @@ const projetos = [
         link: "https://github.com/matheussd1/Aerocode"
     },
     {
-        nome: "DM-API",
+        nome: "API com DM Card",
         descricao: "API robusta para consulta de indicadores financeiros e KPIs estaduais com banco de dados SQLite.",
         tecnologias: ["Node.js", "Express", "SQLite"],
-        link: "https://github.com/matheussd1/DM-API"
+        link: "https://github.com/TeamMinerva/DM-API"
     }
 ];
 
@@ -71,23 +71,22 @@ function gerarSaudacao() {
 // renderizar os projetos (ja atende requisitos 2 e 3 )
 function renderizarProjetos() {
     const container = document.getElementById('grid-projetos');
-    
-    // limpa o container pra nao iniciar errado
-    container.innerHTML = "";
+    container.innerHTML = ""; 
 
-    for (let i = 0; i < projetos.length; i++) {
-        const p = projetos[i];
+    projetos.forEach(p => {
         container.innerHTML += `
-            <article class="projeto-card">
-                <h3>${p.nome}</h3>
-                <p>${p.descricao}</p>
-                <div class="tech-tags">
-                    ${p.tecnologias.map(t => `<span>${t}</span>`).join('')}
-                </div>
-                <a href="${p.link}" target="_blank" class="btn-git">Ver no GitHub</a>
-            </article>
+            <a href="${p.link}" target="_blank" class="projeto-card">
+                <article>
+                    <h3>${p.nome}</h3>
+                    <p>${p.descricao}</p>
+                    <div class="tech-tags">
+                        ${p.tecnologias.map(t => `<span>${t}</span>`).join('')}
+                    </div>
+                    <span class="link-indicador">Ver Repositório →</span>
+                </article>
+            </a>
         `;
-    }
+    });
 }
 
 // renderiza as habilidades
