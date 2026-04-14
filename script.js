@@ -135,7 +135,7 @@ function renderizarHabilidades() {
 
 
 function copiarEmail() {
-    const email = "matheusrdias.dev@gmail.com";
+    const email = "matheusrpd.dev@gmail.com";
     const feedback = document.getElementById('feedback-copia');
 
     // Copia para a área de transferência
