@@ -6,6 +6,8 @@ Este projeto é um portfólio pessoal dinâmico desenvolvido como parte de uma a
 ## De uma olhada no projeto: 
 https://matheussd1.github.io/PortfolioAcademico/
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 O projeto foi construído "do zero" (Vanilla), sem o uso de frameworks pesados, para demonstrar domínio sobre os fundamentos da web:
