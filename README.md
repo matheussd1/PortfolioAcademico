@@ -1,4 +1,4 @@
-﻿# Portfólio Profissional - Matheus Dias
+﻿# Portfólio Acadêmico - Matheus Dias
 
 Este projeto é um portfólio pessoal dinâmico desenvolvido como parte de uma avaliação prática de desenvolvimento web. O foco foi criar uma interface **minimalista, artística e funcional**, utilizando tecnologias modernas de front-end e boas práticas de UX/UI.
 
